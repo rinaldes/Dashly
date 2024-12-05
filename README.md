@@ -85,7 +85,5 @@ bun run preview
 - [Nuxt.js](https://nuxt.com/) - The Vue.js Framework
 - Vue.js - Progressive JavaScript Framework
 - Tailwind CSS - For styling
-- Pinia - State Management
-- Node.js - Runtime Environment
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
