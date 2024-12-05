@@ -4,7 +4,7 @@
       <BaseIcon name="ep:food" color="#f79f1a" class="mr-2" /> Dishly
     </NuxtLink>
 
-    <div class="flex items-center space-x-6">
+    <div class="items-center space-x-6 hidden md:flex">
       <div class="relative w-72 flex items-center">
         <div class="relative w-full">
           <BaseInput
