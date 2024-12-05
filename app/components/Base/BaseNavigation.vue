@@ -30,10 +30,11 @@
             @click="handleResultClick(recipe.id)"
             class="flex items-center p-3 hover:bg-gray-100 cursor-pointer"
           >
-            <img
+            <NuxtImg
               :src="recipe.image"
               :alt="recipe.name"
               class="w-12 h-12 object-cover rounded-md mr-4"
+              loading="lazy"
             />
             <div>
               <p class="font-semibold text-sm">{{ recipe.name }}</p>

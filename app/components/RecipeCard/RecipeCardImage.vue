@@ -7,29 +7,30 @@ interface Props {
 const props = defineProps<Props>();
 
 const emit = defineEmits<{
-  (e: 'load'): void;
+  (e: "load"): void;
 }>();
 
 const imageLoaded = ref(false);
 
 const onImageLoad = () => {
   imageLoaded.value = true;
-  emit('load');
+  emit("load");
 };
 </script>
 
 <template>
   <div class="relative w-full h-48 overflow-hidden">
-    <img 
-      :src="image" 
-      :alt="alt || 'Recipe Image'" 
+    <NuxtImg
+      loading="lazy"
+      :src="image"
+      :alt="alt || 'Recipe Image'"
       class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
       @load="onImageLoad"
     />
-    
+
     <!-- Optional loading state -->
-    <div 
-      v-if="!imageLoaded" 
+    <div
+      v-if="!imageLoaded"
       class="absolute inset-0 bg-gray-200 animate-pulse"
     ></div>
   </div>

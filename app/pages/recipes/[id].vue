@@ -122,6 +122,7 @@ useSeoMeta({
         sizes="xs:100vw sm:100vw md:100vw lg:100vw"
         class="w-full h-full object-cover shadow-sm transition-transform duration-500 hover:scale-110"
         alt=""
+        loading="lazy"
         @load="imageLoaded = true"
       />
     </div>
